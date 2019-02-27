@@ -1,0 +1,51 @@
+<html>
+
+<head>
+    <title>160410116114 Calculator</title>
+    <script>
+        var a, b, c;
+        function add() {
+            a = parseInt(document.getElementById("t1").value);
+            b = parseInt(document.getElementById("t2").value);
+            c = a + b;
+            document.getElementById("t3").value = window.c;
+        }
+        function sub() {
+            a = parseInt(document.getElementById("t1").value);
+            b = parseInt(document.getElementById("t2").value);
+            c = a - b;
+            document.getElementById("t3").value = c;
+        }
+        function mul() {
+            a = parseInt(document.getElementById("t1").value);
+            b = parseInt(document.getElementById("t2").value);
+            c = a * b;
+            document.getElementById("t3").value = c;
+        }
+        function div() {
+            a = parseInt(document.getElementById("t1").value);
+            b = parseInt(document.getElementById("t2").value);
+            c = a / b;
+            document.getElementById("t3").value = c;
+        }
+    </script>
+</head>
+
+<body>
+    <center>
+        <form style=margin-top:20%>
+            <fieldset style=width:30%>
+                <legend> Calculator</legend>
+                A :: <input type="text" id="t1" placeholder="Enter First Value"><br>
+                B :: <input type="text" id="t2" placeholder="Enter Second Value"><br><br>
+                <input type="button" value="ADD" onclick="add()">&nbsp;&nbsp;
+                <input type="button" value="SUB" onclick="sub()"><br>
+                <input type="button" value="MUL" onclick="mul()">&nbsp;&nbsp;
+                <input type="button" value="DIV" onclick="div()"><br><br>
+                C :: <input type="text" id="t3" placeholder="Ans Printed Here">
+            </fieldset>
+        </form>
+    </center>
+</body>
+
+</html>
